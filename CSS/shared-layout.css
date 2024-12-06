@@ -1,0 +1,287 @@
+/* DESKTOP */
+
+body {
+    background-color: #d7e8f4; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand h1 {
+    color: #f8f9fa;
+    font-size: 24px;
+}
+
+.navbar-brand h6 {
+    margin: 0;
+    color: #f8f9fa;
+    font-size: 15px;
+    font-weight:normal;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    height: 8rem;
+    background-color: #213A57; 
+}
+
+.nav-link.active {
+    border-bottom: 3px solid white; 
+    padding-bottom: 5px;
+    font-weight: bold; 
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    background-color: #406794;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer img {
+    height: 100px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 998; 
+}
+
+.navbar,
+.navbar-collapse {
+    z-index: 999; 
+}
+
+.navbar-brand,
+.navbar-toggler {
+    z-index: 999; 
+}
+
+.navbar-collapse.show + .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-toggler {
+    border: none; 
+}
+
+.navbar-toggler:before,
+.navbar-toggler:after,
+.navbar-toggler span {
+    content: ''; 
+    display: block; 
+    width: 30px; 
+    height: 4px; 
+    background-color: white; 
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* NEWLY ADDED */
+
+.navbar.shrink {
+    height: 5rem;
+    padding: 10px 0;
+    background-color: #192A3B;
+}
+
+.navbar.shrink .navbar-brand img {
+    height: 40px; 
+}
+
+.navbar.shrink .navbar-brand h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.navbar.shrink .navbar-brand h6 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.navbar.shrink .nav-link {
+    font-size: 0.875rem; 
+    padding: 0 10px;
+}
+
+.navbar-collapse.show{
+    height: 100%;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 991px) { 
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: auto;
+        background-color: #213A57;
+    }
+
+    .footer {
+        background-color: #406794; 
+        color: white; 
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 10px; 
+    }
+
+    .footer .me-3 {
+        height: 90px;
+        padding-bottom: 15px;
+    }
+
+    .footer .container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .footer h6 {
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer a {
+        color: white; 
+        margin-right: 10px; 
+    }
+
+    .navbar-collapse li a.active {
+        background-color: #406794; 
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        max-height: 50px; 
+        height: auto; 
+        width: auto; 
+    }
+
+    .navbar-brand h1 {
+        font-size: 22px; 
+        margin: 0;
+    }
+
+    .navbar-brand h6 {
+        font-size: 13px; 
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+    
+    .navbar-collapse ul {
+        padding-left: 0; 
+        list-style: none;
+    }
+
+    .navbar-collapse li {
+        display: block;
+        padding: 5px 0; 
+    }
+
+    .navbar-collapse li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .navbar-collapse li a.active {
+        background-color: #406794; 
+        color: white;
+        border-radius: 5px; 
+    }
+    
+}
+
+@media only screen and (max-width: 390px) {
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        max-height: 40px; 
+        height: auto; 
+        width: auto; 
+    }
+
+    .navbar-brand h1 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .navbar-brand h6 {
+        font-size: 10px; 
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+    
+    .navbar-collapse ul {
+        padding-left: 0; 
+        list-style: none;
+    }
+
+    .navbar-collapse li {
+        display: block;
+        padding: 5px 0; 
+    }
+
+    .navbar-collapse li a {
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        padding: 5px 10px; 
+    }
+
+    .navbar-collapse li a.active {
+        background-color: #406794; 
+        color: white;
+        border-radius: 5px; 
+    }
+}

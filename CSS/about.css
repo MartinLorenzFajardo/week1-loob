@@ -1,0 +1,104 @@
+/* MAIN CONTENT */
+main {
+    margin-top: 8rem;
+    padding: 2rem 19rem 2rem 19rem;
+    text-align: justify;
+}
+
+.section-topic {
+    color: #213a57;
+    font-weight: 900;
+}
+
+.mission, .vision, .history, .officials {
+    margin-bottom: 5rem;
+}
+
+.history {
+    text-align: center;
+}
+
+.his {
+    text-align: justify;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card-holder {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-img {
+    border-radius: 8px;
+    width: 28rem;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1300px) {
+    main {
+        margin-top: 8rem;
+        padding: 0;
+        text-align: justify;
+    }
+    .mission, .vision, .history, .officials {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 991px) { 
+    main {
+        margin-top: 8rem;
+        padding: 0;
+        text-align: justify;
+    }
+    .mission, .vision, .history, .officials {
+        margin-bottom: 1rem;
+    }
+    .card-img {
+        width: 23rem;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    main {
+        margin-top: 6rem 0 0 0;
+        padding: 10px;
+        text-align: justify;
+    }
+    .mis-vis {
+        flex-direction: column;
+        margin: 0;
+        gap: 0px;
+    }
+    .mis-vis p {
+        font-size: 12px;
+    }
+    .mission, .vision {
+        width: 100%;
+    }
+    .mission, .vision, .history, .officials {
+        margin-bottom: 20px;
+    }
+    .his {
+        gap: 1rem;
+    }
+    .text p{
+        font-size: 12px;
+    }
+    .card-img {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    main {
+        margin-top: 4rem;
+    }
+    .card-img {
+        width: 15rem;
+    }
+}

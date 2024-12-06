@@ -1,0 +1,57 @@
+.headings h1 {
+    font-weight: 900;
+    color: #213A57;
+    padding-top: 7%;
+}
+
+.text-content {
+    margin-left: 20px; 
+}
+
+.text-content h2, .text-content h4, .text-content p {
+    color: #28282B;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text-content h4 {
+    font-size: 18px;
+}
+
+.text-content p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) { 
+     .card {
+        margin: 10px auto; 
+    }
+
+    .card-img-top {
+        width: 100%; 
+        height: auto;
+    }
+
+    .card-body {
+        text-align: center; 
+    }
+}

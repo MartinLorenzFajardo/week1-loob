@@ -1,0 +1,59 @@
+/* effects that targets more than 1 elements */
+html {
+    scroll-behavior: smooth;
+}
+  
+/* fade in during load */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* scroll reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}  
+  
+body.loaded .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MAIN CONTENT */
+main {
+    margin-top: 8rem;
+    padding: 2rem 19rem 2rem 19rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.certificate, .clearance, .permit, .indigency {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 991px) { 
+
+}
+
+@media only screen and (max-width: 452px) {
+    
+        
+}
+
+@media only screen and (max-width: 390px) {
+
+}

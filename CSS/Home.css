@@ -1,0 +1,98 @@
+main {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    gap: 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+    text-align: justify !important;
+}
+
+body {
+    background-color: #d7e8f4 !important;
+}
+
+#head {
+    font-size: 75px;
+    margin: 10rem 5rem 0rem 5rem;
+    position: absolute;
+    z-index: 3;
+}
+
+#subhead {
+    margin: 16rem 5rem 0rem 5.5rem;
+    position: absolute;
+    z-index: 3;
+    font-size: 30px;
+}
+
+.navbar {
+  position: fixed !important;
+}
+
+#carouselExampleIndicators {
+  max-width: fit-content !important;
+  margin: 7rem 0rem 0rem 0rem;
+
+}
+
+#placeholder img {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover !important;
+}
+
+#Projects h1 {
+  font-weight: bold;
+  margin: 2rem 0rem 0rem 5rem;
+}
+
+@media only screen and (max-width: 991px) { 
+  #carouselExampleIndicators {
+    max-width: fit-content !important;
+    margin: 5rem 0rem 0rem 0rem;
+  
+  }
+  #head {
+    font-size: 50px;
+    margin: 8rem 5rem 0rem 3rem;
+    position: absolute;
+    z-index: 3;
+    font-weight: bold;
+  }
+
+  #subhead {
+    margin: 12rem 5rem 0rem 3.5rem;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 452px) {
+  #carouselExampleIndicators {
+    max-width: fit-content !important;
+    margin: 4.7rem 0rem 0rem 0rem;
+  
+  }
+  #head {
+    font-size: 25px;
+    margin: 6.5rem 8rem 0rem 3rem;
+    position: absolute;
+    z-index: 3;
+    font-weight: bold;
+  }
+
+  #subhead {
+    margin: 8.5rem 5rem 0rem 3rem;
+    position: absolute;
+    z-index: 3;
+    font-size: 12px;
+  }
+
+  #Projects h1 {
+    font-weight: bold;
+    margin: 2rem 0rem 0rem 3rem;
+    font-size: 25px;
+  }
+}
